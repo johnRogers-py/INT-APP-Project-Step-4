@@ -1,4 +1,4 @@
-# AmazonClone — Step 3 React Shopping App
+# AmazonClone — Step 4 React Shopping App
 
 An Amazon.com-inspired shopping app built with React, Bootstrap 5, and JSON Server.
 
@@ -32,39 +32,6 @@ npm start
 
 ---
 
-## 📁 Component Structure
-
-| File | Purpose |
-|------|---------|
-| `App.jsx` | Root component — manages all state, fetches data, owns CRUD handlers |
-| `NavBar.jsx` | Amazon-style sticky header with logo, location, and cart button |
-| `SearchBar.jsx` | Category dropdown + live search input + submit button |
-| `Card.jsx` | Product card with image, rating, price, Prime badge, and Add to Cart |
-| `ShoppingCart.jsx` | Sliding cart drawer with quantity controls and remove button |
-
----
-
-## ⚡ Features
-
-- **Props** — All components receive data and callbacks via props
-- **State** — `useState` for products, cart, search query, active category, sort, cart open/closed
-- **useEffect** — Fetches products and cart from JSON Server on initial mount
-- **CRUD via Fetch API**:
-  - **Create** — POST /cart (add item)
-  - **Read** — GET /products, GET /cart (on load)
-  - **Update** — PATCH /cart/:id (change quantity)
-  - **Delete** — DELETE /cart/:id (remove item)
-- **Live search** — Filters products as you type
-- **Category filter** — Pills + NavBar dropdown
-- **Sort** — Featured, Price Low→High, Price High→Low, Rating, Reviews
-- **Persistent cart** — Cart saved in db.json via JSON Server
-- **Bootstrap 5** — Responsive grid (1→2→3→4 columns), utility classes
-- **CSS Modules** — Scoped, component-level styles
-
----
-
-## 🗄 Database (db.json)
-
-The backend has two collections:
-- `GET /products` — 12 products across Electronics, Computers, Smart Home
-- `GET /cart` — persisted cart items `{ id, productId, quantity }`
+4/28 Updates
+- Added Orders page
+- Added Buy It Now page
